@@ -515,6 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34aa80a00aa968c42a92325bad322c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scanTXT: Click To Listen
 --- !u!1 &961949906
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34aa80a00aa968c42a92325bad322c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scanTXT: Click To Search
 --- !u!1 &1204028143
 GameObject:
   m_ObjectHideFlags: 0

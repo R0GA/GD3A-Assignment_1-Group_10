@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -189,6 +190,7 @@ public class DetectiveModeController : MonoBehaviour
         currentPrompt.transform.position = clue.transform.position + Vector3.up * 0.5f;
         currentPrompt.transform.LookAt(Camera.main.transform);
         currentPrompt.transform.Rotate(0, 180, 0); // Make it face the camera properly
+        currentPrompt.GetComponentInChildren<TMP_Text>().text = clue.GetComponent<ClueObject>().scanTXT;
     }
 
 
