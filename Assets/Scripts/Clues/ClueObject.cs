@@ -5,6 +5,8 @@ using UnityEngine;
 public class ClueObject : MonoBehaviour
 {
     public bool IsScanned { get; private set; } = false;
+    public string scanTXT;
+
 
     public void Scan()
     {
