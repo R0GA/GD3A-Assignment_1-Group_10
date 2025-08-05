@@ -5994,7 +5994,8 @@ GameObject:
   - component: {fileID: 1153281410}
   - component: {fileID: 1153281409}
   - component: {fileID: 1153281412}
-  m_Layer: 10
+  - component: {fileID: 1153281413}
+  m_Layer: 0
   m_Name: Door (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8967,6 +8968,149 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623624640}
   m_Mesh: {fileID: -2228417370725966487, guid: 5c9cb951837cc474ab39071440ed6ef0, type: 3}
+--- !u!1001 &1625489030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.87
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.93
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.167392
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Jacket
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625489032}
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625489034}
+    - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625489033}
+  m_SourcePrefab: {fileID: 100100000, guid: 43679c9aa7f0e124791aee7fb4ce12c9, type: 3}
+--- !u!1 &1625489031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 43679c9aa7f0e124791aee7fb4ce12c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1625489030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1625489032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625489031}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5495902117074765545, guid: 43679c9aa7f0e124791aee7fb4ce12c9, type: 3}
+--- !u!114 &1625489033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625489031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d560f2a8f6612594bb70089f1fd8b6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clue: {fileID: 0}
+  textPrefab: {fileID: 5552373235647644375, guid: 820804e237b2aec42b961063cf6b42db,
+    type: 3}
+  hint: It Seems The Man Was Pushed... Time To Leave
+  exitDoor: {fileID: 1153281407}
+--- !u!114 &1625489034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625489031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34aa80a00aa968c42a92325bad322c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scanTXT: Click To Scan
 --- !u!1 &1634463414
 GameObject:
   m_ObjectHideFlags: 0
@@ -24861,3 +25005,4 @@ SceneRoots:
   - {fileID: 1295081977}
   - {fileID: 252903725}
   - {fileID: 1798872899}
+  - {fileID: 1625489030}
