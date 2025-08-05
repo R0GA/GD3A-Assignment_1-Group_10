@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Door2 : MonoBehaviour
 {
     [SerializeField] private ClueObject clue;
+    [SerializeField] private GameObject ui;
+    [SerializeField] private CharacterController character;
     void Start()
     {
         clue = GetComponent<ClueObject>();
@@ -13,6 +15,12 @@ public class Door2 : MonoBehaviour
     private void Update()
     {
         if (clue.IsScanned)
-            SceneManager.LoadScene("EndScene");
+        {
+            //SceneManager.LoadScene("EndScene");
+            Time.timeScale = 0;
+            ui.SetActive(true);
+            character.enabled = false;
+        }
+
     }
 }
