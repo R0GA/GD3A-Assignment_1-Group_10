@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public CharacterController characterController; // Reference to the CharacterController component
     private PlayerControls playerInput;
 
+
     private void Awake()
     {
         // Get and store the CharacterController component attached to this GameObject
