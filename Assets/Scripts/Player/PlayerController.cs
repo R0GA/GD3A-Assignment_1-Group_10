@@ -76,19 +76,19 @@ public class PlayerController : MonoBehaviour
 
     public void LookAround()
     {
-            // Get horizontal and vertical look inputs and adjust based on sensitivity
-            float LookX = lookInput.x * lookSpeed;
-            float LookY = lookInput.y * lookSpeed;
+        // Get horizontal and vertical look inputs and adjust based on sensitivity
+        float LookX = lookInput.x * lookSpeed;
+        float LookY = lookInput.y * lookSpeed;
 
-            // Horizontal rotation: Rotate the player object around the y-axis
-            transform.Rotate(0, LookX, 0);
+        // Horizontal rotation: Rotate the player object around the y-axis
+        transform.Rotate(0, LookX, 0);
 
-            // Vertical rotation: Adjust the vertical look rotation and clamp it to prevent flipping
-            verticalLookRotation -= LookY;
-            verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
+        // Vertical rotation: Adjust the vertical look rotation and clamp it to prevent flipping
+        verticalLookRotation -= LookY;
+        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
 
-            // Apply the clamped vertical rotation to the player camera
-            playerCamera.localEulerAngles = new Vector3(verticalLookRotation, 0, 0);
+        // Apply the clamped vertical rotation to the player camera
+        playerCamera.localEulerAngles = new Vector3(verticalLookRotation, 0, 0);
     }
 
     public void ApplyGravity()
