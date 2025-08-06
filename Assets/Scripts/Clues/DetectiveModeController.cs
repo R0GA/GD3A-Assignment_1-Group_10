@@ -163,7 +163,7 @@ public class DetectiveModeController : MonoBehaviour
         }
 
         // Handle UI prompt
-        if (closestClue != null && closestDistance < 3f) // 3m interaction range
+        if (closestClue != null && closestDistance < 4f) // 4m interaction range
         {
             var clueObject = closestClue.GetComponent<ClueObject>();
             if (clueObject != null && !clueObject.IsScanned)
@@ -187,7 +187,7 @@ public class DetectiveModeController : MonoBehaviour
         }
 
         // Position prompt above the clue
-        currentPrompt.transform.position = clue.transform.position + Vector3.up * 0.5f;
+        currentPrompt.transform.position = clue.transform.position + Vector3.up * 1f;
         currentPrompt.transform.LookAt(Camera.main.transform);
         currentPrompt.transform.Rotate(0, 180, 0); // Make it face the camera properly
         currentPrompt.GetComponentInChildren<TMP_Text>().text = clue.GetComponent<ClueObject>().scanTXT;
