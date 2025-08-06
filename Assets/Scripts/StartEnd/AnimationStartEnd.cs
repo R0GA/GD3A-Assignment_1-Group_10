@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Animation : MonoBehaviour
+public class AnimationStartEnd : MonoBehaviour
 {
     public RawImage[] rawImages;          
     public float switchInterval = 0.25f; 
@@ -36,5 +37,10 @@ public class Animation : MonoBehaviour
 
             yield return new WaitForSeconds(switchInterval);
         }
+    }
+
+    public void startGame()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }

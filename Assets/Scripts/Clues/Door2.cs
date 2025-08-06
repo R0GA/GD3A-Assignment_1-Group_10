@@ -16,10 +16,7 @@ public class Door2 : MonoBehaviour
     {
         if (clue.IsScanned)
         {
-            //SceneManager.LoadScene("EndScene");
-            Time.timeScale = 0;
-            ui.SetActive(true);
-            character.enabled = false;
+            SceneManager.LoadScene("STARTEND"); 
         }
 
     }
